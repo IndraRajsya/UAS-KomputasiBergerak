@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UasKomberTemplate.SignUpPage"
+             BackgroundColor="#339933"
+             Title="SignUpPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="0"
+                         Padding="30,0"
+                         VerticalOptions="Center">
+       
+
+        <VerticalStackLayout Spacing="2" Padding="2">
+            <Label FontFamily="Sitka" FontSize="Title"  
+                   HorizontalTextAlignment="Center"
+                   Text="Welcome To Wonderfull World!" TextColor="Wheat"/>
+            <Label FontFamily="Bold" FontSize="Subtitle" 
+                   HorizontalTextAlignment="Center"
+                   Text="Sign In To Make A New Account" TextColor="Wheat"/>
+        </VerticalStackLayout>
+
+
+        <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+            <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="10"
+                Text="Full Name" TextColor="Wheat"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60"
+                   CornerRadius="30" 
+                  BorderColor="#66ff99">
+                <Image Source="greenuser.jpg" 
+                           HeightRequest="20" WidthRequest="20"/>
+            </Frame>
+            <Frame  HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                    BorderColor="#66ff99">
+                <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                       Placeholder="Enter Your Full Name"/>
+            </Frame>
+        </StackLayout>
+       
+        <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+            <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="10"
+                Text="Phone Number" TextColor="Wheat"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60"
+                   CornerRadius="30" 
+                  BorderColor="#66ff99">
+                <Image Source="greenphone.jpg" 
+                           HeightRequest="20" WidthRequest="20"/>
+            </Frame>
+            <Frame  HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                    BorderColor="#66ff99">
+                <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                       Placeholder="+12345678"/>
+            </Frame>
+            
+        </StackLayout>
+        <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+            <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="10"
+                Text="Email" TextColor="Wheat"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60"
+                   CornerRadius="30" 
+                  BorderColor="#66ff99">
+                <Image Source="greenemail.png" 
+                           HeightRequest="20" WidthRequest="20"/>
+            </Frame>
+            <Frame  HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                    BorderColor="#66ff99">
+                <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                       Placeholder="Email@gmail.com"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+            <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="10"
+                Text="New Password" TextColor="Wheat"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60" 
+                   CornerRadius="30" 
+                   BorderColor="#66ff99">
+                <Image HorizontalOptions="FillAndExpand" Source="greenpass.png" 
+                           HeightRequest="20" WidthRequest="20"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                   BorderColor="#66ff99">
+                <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                        IsPassword="True"
+                       Placeholder="***"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+            <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="10"
+                Text="Confirm New Password" TextColor="Wheat"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60" 
+                   CornerRadius="30" 
+                   BorderColor="#66ff99">
+                <Image HorizontalOptions="FillAndExpand" Source="greenpass.png" 
+                           HeightRequest="20" WidthRequest="20"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                   BorderColor="#66ff99">
+                <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                        IsPassword="True"
+                       Placeholder="***"/>
+            </Frame>
+        </StackLayout>
+
+        <Button FontFamily="OpenSansBold" FontAttributes="Bold" Text="Sign Up" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center"
+                BackgroundColor="#00cc66"/>
+        <StackLayout Orientation="Horizontal" Spacing="2" HorizontalOptions="Center">
+
+            <Label FontFamily="Sitka" FontAttributes="Bold" 
+                   Text="Already Have Account?" TextColor="Wheat"/>
+            <Label FontFamily="Sitka" FontAttributes="Bold"
+                   Text="Sign In Here" TextColor="LightBlue">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+
+            </Label>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="5" HorizontalOptions="Center">
+
+            <Label FontFamily="Sitka" FontAttributes="Bold" 
+                   Text="Or Login With" TextColor="Wheat"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="4">
+            <Image Source="fb.jpg" 
+                           HeightRequest="30" WidthRequest="30"/>
+            <Image Source="gmail.jpg" 
+                           HeightRequest="35" WidthRequest="35"/>
+        </StackLayout>
+
+
+
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
